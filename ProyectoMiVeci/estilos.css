@@ -1,0 +1,58 @@
+/**menu*/
+.navbar-nav{
+  margin-left: 83%;
+}
+.fa-bell{
+    font-size: 30px;
+    width: 40px;
+   color: black;
+}
+.fa-user{
+  font-size: 30px; 
+  width: 40px;
+  color: black;
+}
+.fa-cart-arrow-down{
+  font-size: 30px;
+  width: 50px;
+  color: black;
+}
+.btn{
+  margin: 0;
+  border-radius: 30px;
+  letter-spacing: 0;
+  text-align: left;
+}
+.container{
+  margin: 5% 15% 3% 20%;
+  text-align: center;
+  font-size: 26px;
+}
+.card-title{
+  font-family: 'Lobster', cursive;
+}
+.card-text{
+  font-family: 'Rokkitt', serif;
+}
+.card-img{
+  width: 100%;
+  margin: 4%;
+  border-radius: 1%;
+}
+.card-img2{
+  width: 108%;
+  height: 88%;
+  margin: 4%;
+  border-radius: 1%;
+}
+
+/* FOOTER*/
+
+.footer{
+  background-color: black;
+  color: white;
+  margin-bottom: 0%;
+  width: 100%; 
+  text-align: center;
+  line-height: 3;
+}

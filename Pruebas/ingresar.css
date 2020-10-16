@@ -1,0 +1,177 @@
+body{
+  height: 100%; 
+  font-family: 'Noto Sans', sans-serif;
+  background-color: #f8f8f8; 
+}
+
+
+.contact_form{  
+  width: 460px; 
+  height: auto;
+  margin: 80px auto;
+  border-radius: 10px;  
+  padding-top: 30px;
+  padding-bottom: 20px;  
+  background-color: #0f0f0edc; 
+  padding-left: 30px; 
+}
+
+
+p input{
+  background-color: #fbfbfb; 
+  width: 408px; 
+  height: 40px; 
+  border-radius: 5px;  
+  border-style: solid; 
+  border-width: 1px; 
+  border-color: #fcf7fc; 
+  margin-top: 10px;  
+  padding-left: 10px;
+  margin-bottom: 20px; 
+}
+
+#clave{
+  background-color: #fbfbfb; 
+  width: 398px; 
+  height: 40px; 
+  border-radius: 5px;  
+  border-style: solid; 
+  border-width: 1px;
+  border-color: #fcf7fc; 
+  margin-top: 10px;  
+  padding-left: 10px;
+  margin-bottom: 20px; 
+}
+
+
+textarea{
+  background-color: #aaa8a8; 
+    width: 405px; 
+    height: 150px; 
+    border-radius: 5px;  
+    border-style: solid; 
+    border-width: 1px; 
+    margin-top: 10px;  
+    padding-left: 10px;
+  margin-bottom: 20px; 
+  padding-top: 15px; 
+}
+button{
+    height: 45px; 
+    padding-left: 5px;
+    padding-right: 5px;     
+    margin-bottom: 20px; 
+    margin-top: 10px;   
+    text-transform: uppercase;
+    background-color: #d8ab17ea; 
+    border-color: #0c0c0cef; 
+    border-style: solid; 
+    border-radius: 10px;    
+    width: 410px;   
+   cursor: pointer;
+   
+}
+
+
+button p{
+    color: #fff; 
+    text-align: center;
+}
+.aviso{
+    font-size: 13px;  
+    color: #f7f4f4;  
+
+}
+
+h3{
+    font-size: 16px; 
+    padding-bottom: 30px;
+    color: #0e0e0e;   
+}
+
+
+p{
+    font-size: 14px; 
+    color: #f5efef; 
+}
+
+
+::-webkit-input-placeholder {
+ color: #a8a8a8;
+}
+
+
+::-webkit-textarea-placeholder {
+ color: #a8a8a8;
+}
+
+
+.formulario input:focus{
+    outline:0;
+    border: 1px solid #d8ab17ea;
+}
+
+
+.formulario textarea:focus{
+    outline:0;
+    border: 1px solid #d8ab17ea;
+}
+h1{
+    font-size: 39px;  
+    text-align: letf; 
+    padding-bottom: 20px; 
+    color: #fffdf5dc;
+}
+ 
+ /*  menu    */
+.navbar-nav{
+  margin-left: 83%;   
+}
+
+.fa-bell{
+  font-size: 30px;
+  width: 40px;
+  color: black;
+}
+
+.fa-user{
+  font-size: 30px; 
+  width: 40px;
+  color: black;
+}
+.fa-cart-arrow-down{
+  font-size: 30px;
+  width: 50px;
+  color: black;
+}
+
+/*a que me redirecciona al formulario de karen*/
+
+.alert{
+  background-color: transparent;
+  border: none;
+  margin-right: 0%;
+  color: white;
+}
+
+.alert-secondary .alert-link{
+  color: #d8ab17ea;
+  text-decoration: none;
+}
+
+.alert-secondary .alert-link:focus{
+  outline:0;
+    border: 1px solid #99e905ea;
+
+}
+
+/* FOOTER*/
+
+.footer{
+  background-color: black;
+  color: white;
+  margin-bottom: 0%;
+  width: 100%; 
+  text-align: center;
+  line-height: 3;
+}
