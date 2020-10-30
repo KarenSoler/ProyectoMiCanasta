@@ -56,3 +56,40 @@ exports.update=(req, res) => {
         }
     )
 }
+exports.getAll = (req, res) => {
+    ProductModel.find()        
+        .then((products) => {res.send(products) })
+        .catch(
+            (error) => {
+                res.status(500).send({
+                    message: error.message
+                })
+            }
+        )
+
+}
+
+exports.getOne = (req, res) => {
+    ProductModel.findById(req.params.id)        
+        .then((product) => { res.send(product) })
+        .catch(
+            (error) => {
+                res.status(500).send({
+                    message: error.message
+                })
+            }
+        )
+
+}
+
+exports.deleteOne = (req, res) => {
+    ProductModel.findByIdAndRemove(req.params.id)
+        .then((product) => { res.send(product) })
+        .catch(
+            (error) => {
+                res.status(500).send({
+                    message: error.message
+                })
+            }
+        )
+}

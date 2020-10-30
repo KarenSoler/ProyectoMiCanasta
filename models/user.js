@@ -10,3 +10,5 @@ const userSchema = new mongoose.Schema({
     barrio: [{type: mongoose.Schema.Types.ObjectId, ref: 'Barrio'}]
  })
  module.exports = mongoose.model('User', userSchema)
+
+ 

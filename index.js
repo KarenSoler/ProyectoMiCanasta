@@ -14,7 +14,7 @@ const app = express()
 
 app.use(cors())
 app.use(bodyParser.json())
-
+const port = process.env.PORT || 3000
 
 conectDB()
 require('./routes/user')(app)
@@ -24,6 +24,6 @@ require('./routes/tienda')(app)
 require('./routes/cliente')(app)
 require('./routes/tendero')(app)
 
-app.listen(3000, () => {
+app.listen(port, () => {
     console.log('El servidor se levanto correctamente.')
 })

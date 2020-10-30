@@ -50,3 +50,34 @@ exports.update=(req, res) => {
         }
     )
 }
+exports.getAll = (req, res) => {
+    BarrioModel.find()        
+        .then((barrios) => {res.send(barrios) })
+        .catch(
+            (error) => {
+                res.status(500).send({
+                    message: error.message
+                })
+            })
+}
+exports.getOne = (req, res) => {
+    BarrioModel.findById(req.params.id)        
+        .then((barrio) => { res.send(barrio) })
+        .catch(
+            (error) => {
+                res.status(500).send({
+                    message: error.message
+                })
+            })
+}
+exports.deleteOne = (req, res) => {
+    BarrioModel.findByIdAndRemove(req.params.id)
+        .then((barrio) => { res.send(barrio) })
+        .catch(
+            (error) => {
+                res.status(500).send({
+                    message: error.message
+                })
+            }
+        )
+}

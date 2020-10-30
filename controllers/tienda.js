@@ -50,3 +50,35 @@ exports.update=(req, res) => {
         }
     )
 }
+exports.getAll = (req, res) => {
+    TiendaModel.find()    
+        .populate('barrio')    
+        .exec()
+        .then((tiendas) => {res.send(tiendas) })
+        .catch(
+            (error) => {
+                res.status(500).send({
+                    message: error.message
+                })
+            })
+}
+exports.getOne = (req, res) => {
+    TiendaModel.findById(req.params.id)        
+        .then((tienda) => { res.send(tienda) })
+        .catch(
+            (error) => {
+                res.status(500).send({
+                    message: error.message
+                })
+            })
+}
+exports.deleteOne = (req, res) => {
+    TiendaModel.findByIdAndRemove(req.params.id)
+        .then((tienda) => { res.send(tienda) })
+        .catch(
+            (error) => {
+                res.status(500).send({
+                    message: error.message
+                })
+            })
+}

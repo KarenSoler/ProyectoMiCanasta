@@ -48,3 +48,31 @@ exports.update = (req, res) => {
         }
     )
 }
+exports.getAll = (req, res) => {
+    ClienteModel.find()
+    .populate('user')
+    .exec()
+    .then( (clientes) => {res.send(clientes) } )
+    .catch(
+        (error) => {
+            res.status(500).send({message: error.message})
+        })
+}
+exports.getOne = (req, res) => {
+    ClienteModel.find()
+    .then( (cliente) => {res.send(cliente) } )
+    .catch(
+        (error) => {
+            res.status(500).send({message: error.message})
+        })
+}
+exports.deleteOne = (req, res) => {
+    ClienteModel.findByIdAndRemove(req.params.id)
+        .then((cliente) => { res.send(cliente) })
+        .catch(
+            (error) => {
+                res.status(500).send({
+                    message: error.message
+                })
+            })
+}
