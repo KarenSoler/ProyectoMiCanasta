@@ -32,15 +32,13 @@ exports.decodeToken = (token) => {
             }
             resolve(playload.sub)
 
-        }catch{
+        }
+        catch{
             reject({
                 status: 500,
                 message: 'El token es invalido'
             })
-
         }
-      
-        
     })
     return decode
 }
