@@ -2,13 +2,11 @@
 .navbar-nav{
   margin-left: 83%;   
 }
-
 .fa-bell{
   font-size: 30px;
   width: 40px;
   color: black;
 }
-
 .fa-user{
   font-size: 30px; 
   width: 40px;
@@ -21,37 +19,32 @@
 }
 
 /*   card  */
-
 .card{
   margin-top: 0%;
 }
-
 .cesta{
   height: 90px;
-  margin-left: 25%; 
+  margin-left: 26%; 
   float: left;  
 }
-
 .card-body .card-title{
   color: black;
   text-align: center;
-  margin-top: 1%;  
-}
-
-.card-title{
-  margin-right:50%;
-}
   
-.card-textp{
-  margin-left: 36%;   
 }
-
+.card-title{
+  margin-right:30%;
+  margin-bottom: 0%;
+} 
+.card-textp{
+  margin-left: 40%;  
+}
 .btn{
   margin-left: 47%;
+  background-color: #0a090a;
 }
 
 /* subMenu*/
-
 .subMenu{
   margin-left: 13%;
   margin-top: 23%;
@@ -62,14 +55,12 @@
 }
  
 /*  slider */
-
 #carouselExampleFade{
  width: 60%;
  margin-left: 20%;
 }
 
-/*STILOS crads PROMO*/
-
+/*STILOS cards PROMO*/
 .cards-promo{
   width: 40%;
   float: left;    
@@ -82,7 +73,6 @@
 }
 
 /*ESTILOS FORMULARIO_CONTACTO  JENIFER*/
-
 .contact_form{  
 width: 560px; 
 height: auto;
@@ -93,8 +83,6 @@ padding-bottom: 20px;
 background-color: #d8ab17; 
 padding-left: 30px; 
 }
-
-
 #nombre{
   background-color: #fbfbfb; 
   width: 418px; 
@@ -108,7 +96,6 @@ padding-left: 30px;
   margin-bottom: 20px; 
   margin-left: 7%;
 }
-
 #email{
   background-color:#fbfbfb; 
   width: 418px; 
@@ -122,7 +109,6 @@ padding-left: 30px;
   margin-bottom: 20px;
   margin-left: 7%;
 }
-
 #telefono{
   background-color:#fbfbfb; 
   width: 418px; 
@@ -136,7 +122,6 @@ padding-left: 30px;
   margin-bottom: 20px;
   margin-left: 7%;
 }
-
 #assunto{
   background-color: #fbfbfb; 
   width: 418px; 
@@ -150,8 +135,6 @@ padding-left: 30px;
   margin-bottom: 20px;
   margin-left: 7%;
 }
-
-
 textarea{
 background-color: #fbfbfb; 
 width: 435px; 
@@ -167,7 +150,6 @@ padding-top: 15px;
 margin-left: 7%;
 }
 
-
 label{
 display: block; 
 float: center; 
@@ -175,7 +157,6 @@ margin-left: 7%;
 color: black;
 font-family: 'Noto Sans', sans-serif;
 }
-
 
 button{
 height: 45px; 
@@ -197,7 +178,6 @@ margin-left: 7%;
   text-align:center;
 }
 
-
 button p{
   color: #fff; 
 }
@@ -207,12 +187,10 @@ span{
   color: #111011; 
 }
 
-
 .aviso{
   font-size: 13px;  
   color: #0e0e0e;  
 }
-
 
 h1{
   font-size: 39px;  
@@ -222,14 +200,12 @@ h1{
   text-align: center;
 }
 
-
 h3{
   font-size: 16px; 
   padding-bottom: 30px;
   color: #0e0e0e; 
   text-align: center;  
 }
-
 
 p{
   font-size: 14px; 
@@ -241,17 +217,14 @@ p{
 color: #a8a8a8;
 }
 
-
 ::-webkit-textarea-placeholder {
 color: #a8a8a8;
 }
-
 
 .formulario input:focus{
   outline:0;
   border: 1px solid #97d848;
 }
-
 
 .formulario textarea:focus{
   outline:0;
@@ -268,3 +241,12 @@ color: #a8a8a8;
   text-align: center;
   line-height: 3;
 }
+
+/*Estilos Navegación Tendero*/
+.imgUser{
+  width: 250px;
+}
+.nameUser{
+  width: 250px;
+}
+
